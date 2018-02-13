@@ -1,0 +1,4 @@
+/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/XJGARSDKDemoApp.dir
+/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/ALL_BUILD.dir
+/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/cppframework/CMakeFiles/TestFramework.dir

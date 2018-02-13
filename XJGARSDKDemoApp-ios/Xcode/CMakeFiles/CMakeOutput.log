@@ -1,0 +1,126 @@
+The target system is: Darwin - 1 - 
+The host system is: Darwin - 16.4.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/clang Clang
+Build flags: 
+Id flags:  
+
+The output was:
+0
+=== BUILD TARGET CompilerIdC OF PROJECT CompilerIdC WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+/bin/mkdir -p /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CompilerIdC.LinkFileList
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-project-headers.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-generated-files.hmap
+
+Create product structure
+/bin/mkdir -p /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.xctest
+
+CompileC CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CMakeCCompilerId.o CMakeCCompilerId.c normal armv7 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC
+    export LANG=en_US.US-ASCII
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk -fstrict-aliasing -Wdeprecated-declarations -miphoneos-version-min=10.2 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC.hmap -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/include -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/DerivedSources/armv7 -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/DerivedSources -F/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -MMD -MT dependencies -MF /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CMakeCCompilerId.d --serialize-diagnostics /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CMakeCCompilerId.dia -c /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CMakeCCompilerId.c -o /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CMakeCCompilerId.o
+
+Ld CompilerIdC.xctest/CompilerIdC normal armv7
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC
+    export IPHONEOS_DEPLOYMENT_TARGET=10.2
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk -L/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC -F/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -filelist /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CompilerIdC.LinkFileList -miphoneos-version-min=10.2 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CompilerIdC_lto.o -framework XCTest -Xlinker -dependency_info -Xlinker /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/armv7/CompilerIdC_dependency_info.dat -o /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.xctest/CompilerIdC
+
+GenerateDSYMFile CompilerIdC.xctest.dSYM CompilerIdC.xctest/CompilerIdC
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.xctest/CompilerIdC -o /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.xctest.dSYM
+
+PhaseScriptExecution Run\ Script CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC
+    /bin/sh -c /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+CURRENT_ARCH=armv7
+
+Touch CompilerIdC.xctest
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /usr/bin/touch -c /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.xctest
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.xctest/CompilerIdC"
+
+The C compiler identification is AppleClang, found in "/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.xctest/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/clang++ Clang
+Build flags: 
+Id flags:  
+
+The output was:
+0
+=== BUILD TARGET CompilerIdCXX OF PROJECT CompilerIdCXX WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CompilerIdCXX.LinkFileList
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+write-file /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/CompilerIdCXX.hmap
+
+Create product structure
+/bin/mkdir -p /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.xctest
+
+CompileC CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX
+    export LANG=en_US.US-ASCII
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=10.2 -g -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/include -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/DerivedSources/armv7 -I/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/DerivedSources -F/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -MMD -MT dependencies -MF /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CMakeCXXCompilerId.d --serialize-diagnostics /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CMakeCXXCompilerId.dia -c /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CMakeCXXCompilerId.o
+
+Ld CompilerIdCXX.xctest/CompilerIdCXX normal armv7
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX
+    export IPHONEOS_DEPLOYMENT_TARGET=10.2
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk -L/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX -F/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -filelist /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CompilerIdCXX.LinkFileList -miphoneos-version-min=10.2 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CompilerIdCXX_lto.o -framework XCTest -Xlinker -dependency_info -Xlinker /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Objects-normal/armv7/CompilerIdCXX_dependency_info.dat -o /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX
+
+GenerateDSYMFile CompilerIdCXX.xctest.dSYM CompilerIdCXX.xctest/CompilerIdCXX
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX -o /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.xctest.dSYM
+
+PhaseScriptExecution Run\ Script CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX
+    /bin/sh -c /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphoneos/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+CURRENT_ARCH=armv7
+
+Touch CompilerIdCXX.xctest
+    cd /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0/bin:/Users/jianxinluo/.rvm/gems/ruby-2.4.0@global/bin:/Users/jianxinluo/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianxinluo/.rvm/bin"
+    /usr/bin/touch -c /Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.xctest
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.xctest/CompilerIdCXX"
+
+The CXX compiler identification is AppleClang, found in "/Users/jianxinluo/Desktop/Test/XJGARSDKDemoApp-ios/Xcode/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX"
+
