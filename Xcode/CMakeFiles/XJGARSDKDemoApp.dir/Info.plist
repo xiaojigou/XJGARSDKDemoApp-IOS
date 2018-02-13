@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN""http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+  <key>CFBundleDisplayName</key>
+  <string>XJGARSDKDemoApp</string>
+  <key>CFBundleExecutable</key>
+  <string>XJGARSDKDemoApp</string>
+  <key>CFBundleGetInfoString</key>
+  <string>com.xiaojigou.luo.xjgarsdk.xjgarsdkdemoapp</string>
+  <key>CFBundleIconFile</key>
+  <string></string>
+  <key>CFBundleIdentifier</key>
+  <string>com.xiaojigou.luo.xjgarsdk.xjgarsdkdemoapp</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleLongVersionString</key>
+  <string>1.0</string>
+  <key>CFBundleName</key>
+  <string>com.xiaojigou.luo.xjgarsdk.xjgarsdkdemoapp</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>1.0</string>
+  <key>CFBundleSignature</key>
+  <string>????</string>
+  <key>CFBundleVersion</key>
+  <string>1.0</string>
+  <key>CSResourcesFileMapped</key>
+  <true/>
+  <key>NSHumanReadableCopyright</key>
+  <string>Copyright YOU</string>
+  <key>LSMinimumSystemVersion</key>
+  <string>8.0</string>
+  <key>LSRequiresIPhoneOS</key>
+  <true/>
+    <key>UIBackgroundModes</key>
+  <array>
+    <string>fetch</string>
+    <string>remote-notification</string>
+  </array>
+  <key>UIRequiredDeviceCapabilities</key>
+  <array>
+    <string>armv7</string>
+  </array>
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+  </dict>
+</dict>
+</plist>
