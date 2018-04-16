@@ -125,6 +125,11 @@ stickPaperName参数为贴纸名称，目前可选的贴纸见StickerPapers子�
 >///@pXscale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
 >///@pYScale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
 >返回值：检测到的人脸个数<br>
+![image](https://github.com/TeacherLuo/XJGARSDKDemoApp-IOS/raw/master/ImageCache/17.jpg)<br>
+
+>//在每一帧渲染结束后，可以使用该函数获取原始图像及脸部特征点，
+>XJGARSDK_API int XJGARSDKGetFaceLandmarks(float* faceLandmarks);
+
 
 
 一、准备工作
