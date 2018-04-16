@@ -3,6 +3,7 @@ API接口
 ====================
 注意：SDK中各个函数需要在单一的线程中调用。<br>
 1.	初始化<br>
+
 >####初始化方法：<br>
 XJGARSDK_API bool XJGARSDKInitialization(const char* licenseText, <br>
 	const char* userName, const char* companyName);<br>
@@ -13,7 +14,9 @@ XJGARSDK_API bool XJGARSDKInitialization(const char* licenseText, <br>
 
 >####销毁方法：<br>
 >XJGARSDKCleanUP();<br>
+
 2.	使用人脸整形<br>
+
 >####大眼：<br>
 XJGARSDK_API bool XJGARSDKSetBigEyeParam(int eyeParam);<br>
 eyeParam参数为0-100，数值越大眼睛越大<br>
@@ -35,6 +38,7 @@ XJGARSDK_API bool XJGARSDKSetSkinSmoothParam(int skinSmoothParam); <br>
 skinSmoothParam参数为0-100， 数值越大越皮肤越光滑<br>
 
 3.	使用人脸滤镜<br>
+
 SDK启动时默认不使用滤镜<br>
 >####切换滤镜：<br>
 XJGARSDK_API bool XJGARSDKChangeFilter(const char*  filterTypeName);<br>
@@ -42,13 +46,15 @@ filterTypeName参数为滤镜名字，目前可选的滤镜有6种，分别是�
 在某些中文输入有问题的状况下可以使用英文参数输入，6种滤镜分别为："filter_cool", "filter_Healthy","filter_emerald","filter_nostalgia","filter_crayon", "filter_evergreen"。填入"filter_none",不使用滤镜。<br>
 
 4.	使用人脸道具<br>
+
 >####显示贴纸：<br>
 XJGARSDK_API bool XJGARSDKSetShowStickerPapers(bool bShowStickPaper);<br>
 bShowStickPaper参数 为true时，显示贴纸<br>
 
->>####切换贴纸：<br>
+>####切换贴纸：<br>
 XJGARSDK_API bool XJGARSDKChangeStickpaper(const char*  stickPaperName);<br>
 stickPaperName参数为贴纸名称，目前可选的贴纸见StickerPapers子文件夹，每个文件夹的名称均是贴纸名称<br>
+
 5.	图片视频流处理<br>
 
 //初始化OpenGL 环境<br>
