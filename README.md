@@ -42,8 +42,8 @@
 
 3. Xcode8.0有很多坑，填完一个又来一个，接入手机运行后，点击手机上的两个功能“Render Image Test”和“Render Camera Test”可能会看到“Thread 1: signal SIGABRT”这样的错误，很多原因都会导致这个错误，请注意看错误提示，我们的代码中因为涉及相册和相机，一般会给出如下的错误提示：<br>
 
-'This app has crashed because it attempted to access privacy-sensitive data without a usage description. The app's Info.plist must contain an NSCameraUsageDescription key with a string value explaining to the user how the app uses this data.'<br>
+`This app has crashed because it attempted to access privacy-sensitive data without a usage description. The app's Info.plist must contain an NSCameraUsageDescription key with a string value explaining to the user how the app uses this data.`<br>
 
-'解决方法：'<br>
+`解决方法：`<br>
 
 在上图的Get Info string的下拉框里，选中Privacy-Photo Library Usage Description，在后面的string字段里输入NSPhotoLibraryUsageDescription，这个字段需要自己手动输入，表示使用相册；选中Privacy-Camera Usage Description，在后面的string字段里输入NSCameraUsageDescription，同样需要自己手动输入，表示使用相机。<br>
