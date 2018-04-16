@@ -18,19 +18,19 @@ XJGARSDK_API bool XJGARSDKInitialization(const char* licenseText, <br>
 XJGARSDK_API bool XJGARSDKSetBigEyeParam(int eyeParam);<br>
 eyeParam参数为0-100，数值越大眼睛越大<br>
 
->>####瘦脸：<br>
+>####瘦脸：<br>
 XJGARSDK_API bool XJGARSDKSetThinChinParam(int chinParam); <br>
 chinParam参数为0-100，数值越大脸部下吧越瘦<br>
 
->>####红润：<br>
+>####红润：<br>
 XJGARSDK_API bool XJGARSDKSetRedFaceParam(int redFaceParam); 
 redFaceParam参数为0-100，数值越大脸部皮肤越红润
 
->>####美白：<br>
+>####美白：<br>
 XJGARSDK_API bool XJGARSDKSetWhiteSkinParam(int whiteSkinParam); 
 whiteSkinParam参数为0-100，数值越大脸部皮肤越白
 
->>####磨皮：<br>
+>####磨皮：<br>
 XJGARSDK_API bool XJGARSDKSetSkinSmoothParam(int skinSmoothParam); <br>
 skinSmoothParam参数为0-100， 数值越大越皮肤越光滑<br>
 
@@ -46,11 +46,11 @@ filterTypeName参数为滤镜名字，目前可选的滤镜有6种，分别是�
 XJGARSDK_API bool XJGARSDKSetShowStickerPapers(bool bShowStickPaper);<br>
 bShowStickPaper参数 为true时，显示贴纸<br>
 
->>>>>####切换贴纸：<br>
+>>####切换贴纸：<br>
 XJGARSDK_API bool XJGARSDKChangeStickpaper(const char*  stickPaperName);<br>
 stickPaperName参数为贴纸名称，目前可选的贴纸见StickerPapers子文件夹，每个文件夹的名称均是贴纸名称<br>
 5.	图片视频流处理<br>
-`//初始化OpenGL 环境<br>
+//初始化OpenGL 环境<br>
 XJGARSDK_API bool XJGARSDKInitOpenglEnvironment(int width,	int height);<br>
 ///if user dont't have opengl environment, call this to set up a virtual opengl environment<br>
 ///@width:	width of input image<br>
@@ -106,7 +106,7 @@ XJGARSDK_API void XJGARSDKDrawAFullViewTexture(int inputTexId, int startX, int s
 ///@viewportWidth: width of view<br>
 ///@viewportWidth: height of view<br>
 
-XJGARSDK_API int XJGARSDKGetTargetResultImgAndLandMarks(unsigned char* imageBufOut, int* pOutputTexId, float* faceLandmarks, int targetWidth, int targetHeight, int iImgCropMode, float *pXscale = 0, float * pYScale = 0);`<br>
+XJGARSDK_API int XJGARSDKGetTargetResultImgAndLandMarks(unsigned char* imageBufOut, int* pOutputTexId, float* faceLandmarks, int targetWidth, int targetHeight, int iImgCropMode, float *pXscale = 0, float * pYScale = 0);<br>
 //在每一帧渲染结束后，可以使用该函数获取结果图像及脸部特征点，<br>
 imageBufOut为结果图像存储的RGB缓存，如果为空，则不输出rgb图像。<br>
 pOutputTexId为结果图像存储的纹理Id，如果为空，则不输出纹理对象。<br>
