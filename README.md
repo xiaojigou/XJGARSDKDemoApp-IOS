@@ -5,8 +5,8 @@
 2.安装Mac操作系统；<br>
 3.安装Xcode；<br>
 4.在Mac OSX上安装配置CMake，版本至少是3.7；<br>
-![image]https://github.com/TeacherLuo/XJGARSDKDemoApp-IOS/tree/master/ImageCache/1.jpg <br>
-![image]https://github.com/TeacherLuo/XJGARSDKDemoApp-IOS/tree/master/ImageCache/2.jpg <br>
+![image]https://github.com/TeacherLuo/XJGARSDKDemoApp-IOS/blob/master/ImageCache/1.jpg <br>
+![image]https://github.com/TeacherLuo/XJGARSDKDemoApp-IOS/blob/master/ImageCache/2.jpg <br>
 
 本说明使用的VMWare Station 12，操作系统为macOS High Sierra 版本10.13.3，Xcode版本9.2。如果有MAC电脑可以省去步骤1和2。<br>
 
