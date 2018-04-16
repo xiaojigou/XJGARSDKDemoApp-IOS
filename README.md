@@ -57,74 +57,74 @@ stickPaperName参数为贴纸名称，目前可选的贴纸见StickerPapers子�
 
 5.	图片视频流处理<br>
 
-//初始化OpenGL 环境<br>
-XJGARSDK_API bool XJGARSDKInitOpenglEnvironment(int width,	int height);<br>
-///if user dont't have opengl environment, call this to set up a virtual opengl environment<br>
-///@width:	width of input image<br>
-///@height: height of input image<br>
-///@return  true: success, false: fail<br>
+>//初始化OpenGL 环境<br>
+>XJGARSDK_API bool XJGARSDKInitOpenglEnvironment(int width,	int height);<br>
+>///if user dont't have opengl environment, call this to set up a virtual opengl environment<br>
+>///@width:	width of input image<br>
+>///@height: height of input image<br>
+>///@return  true: success, false: fail<br>
 
-///销毁OpenGL环境<br>
-XJGARSDK_API bool XJGARSDKDestroyOpenglEnvironment();<br>
-///释放OpenGL资源<br>
-XJGARSDK_API bool XJGARSDKReleaseAllOpenglResources();<br>
+>///销毁OpenGL环境<br>
+>XJGARSDK_API bool XJGARSDKDestroyOpenglEnvironment();<br>
+>///释放OpenGL资源<br>
+>XJGARSDK_API bool XJGARSDKReleaseAllOpenglResources();<br>
 
-//设置SDK工作模式，0为视频，1为图片<br>
-XJGARSDK_API bool XJGARSDKSetOptimizationMode(int mode);<br>
-///set different optimization mode for video or image<br>
-///@mode:	optimization mode, 0: video, 1: image<br>
+>//设置SDK工作模式，0为视频，1为图片<br>
+>XJGARSDK_API bool XJGARSDKSetOptimizationMode(int mode);<br>
+>///set different optimization mode for video or image<br>
+>///@mode:	optimization mode, 0: video, 1: image<br>
 
-XJGARSDK_API int XJGARSDKRenderImage(const unsigned char* image, int width,
-	int height, unsigned char* imageBufOut);<br>
-前三个是入参，其中image参数是图像RGB数据，width 图像宽带，heifht图像高度<br>
-imageBufOut为出参，即经过美颜，滤镜，道具处理后的图像，可用OpenCV的imshow函数直接播放。或者也可以采用doublebuffer方案自行写播放函数<br>
+>XJGARSDK_API int XJGARSDKRenderImage(const unsigned char* image, int width,
+>	int height, unsigned char* imageBufOut);<br>
+>前三个是入参，其中image参数是图像RGB数据，width 图像宽带，heifht图像高度<br>
+>imageBufOut为出参，即经过美颜，滤镜，道具处理后的图像，可用OpenCV的imshow函数直接播放。或者也可以采用doublebuffer方案自行写播放函数<br>
 
-XJGARSDK_API int XJGARSDKRenderImage(const unsigned char* image, int width,
-	int height);<br>
-其中image参数是图像RGB数据，width 图像宽带，heifht图像高度<br>
-调用该函数后，将在Opengl屏幕缓存中存储最后渲染的结果。<br>
+>XJGARSDK_API int XJGARSDKRenderImage(const unsigned char* image, int width,
+>	int height);<br>
+>其中image参数是图像RGB数据，width 图像宽带，heifht图像高度<br>
+>调用该函数后，将在Opengl屏幕缓存中存储最后渲染的结果。<br>
 
-XJGARSDK_API int XJGARSDKRenderImage(const unsigned char* image, int width,
-	int height, int* pOutputTexId);<br>
-///input 3 channels RGB image, render to get result opengl texture name<br>
-///@width:	width of input image<br>
-///@height: height of input image<br>
-///@outputTexId:	result opengl texture name<br>
+>XJGARSDK_API int XJGARSDKRenderImage(const unsigned char* image, int width,
+>	int height, int* pOutputTexId);<br>
+>///input 3 channels RGB image, render to get result opengl texture name<br>
+>///@width:	width of input image<br>
+>///@height: height of input image<br>
+>///@outputTexId:	result opengl texture name<br>
 
-XJGARSDK_API int XJGARSDKRenderGLTexture(int inputTexId, int width, 
-	int height, int* pOutputTexId);<br>
-///input opengl texture , render to get result opengl texture <br>
-///@inputTexId:input opengl texture<br>
-///@width:	width of input texture<br>
-///@height: height of input texture<br>
-///@outputTexId:	result opengl texture name<br>
+>XJGARSDK_API int XJGARSDKRenderGLTexture(int inputTexId, int width, 
+>	int height, int* pOutputTexId);<br>
+>///input opengl texture , render to get result opengl texture <br>
+>///@inputTexId:input opengl texture<br>
+>///@width:	width of input texture<br>
+>///@height: height of input texture<br>
+>///@outputTexId:	result opengl texture name<br>
 
-XJGARSDK_API int XJGARSDKRenderGLTexture(int inputTexId, int width, int height);<br>
-///input opengl texture , render to opengl back buffer<br>
-///@inputTexId:input opengl texture<br>
-///@width:	width of input texture<br>
-///@height: height of input texture<br>
+>XJGARSDK_API int XJGARSDKRenderGLTexture(int inputTexId, int width, int height);<br>
+>///input opengl texture , render to opengl back buffer<br>
+>///@inputTexId:input opengl texture<br>
+>///@width:	width of input texture<br>
+>///@height: height of input texture<br>
 
-XJGARSDK_API void XJGARSDKDrawAFullViewTexture(int inputTexId, int startX, int startY, int viewportWidth, int viewportHeight);<br>
-///Given a inputeTexId, draw to target opengl viewport<br>
-///@inputTexId: the inpute text id<br>
-///@startx: start x coordinates of view<br>
-///@startY: start y coordinates of view<br>
-///@viewportWidth: width of view<br>
-///@viewportWidth: height of view<br>
+>XJGARSDK_API void XJGARSDKDrawAFullViewTexture(int inputTexId, int startX, int startY, int viewportWidth, int viewportHeight);<br>
+>///Given a inputeTexId, draw to target opengl viewport<br>
+>///@inputTexId: the inpute text id<br>
+>///@startx: start x coordinates of view<br>
+>///@startY: start y coordinates of view<br>
+>///@viewportWidth: width of view<br>
+>///@viewportWidth: height of view<br>
 
-XJGARSDK_API int XJGARSDKGetTargetResultImgAndLandMarks(unsigned char* imageBufOut, int* pOutputTexId, float* faceLandmarks, int targetWidth, int targetHeight, int iImgCropMode, float *pXscale = 0, float * pYScale = 0);<br>
-//在每一帧渲染结束后，可以使用该函数获取结果图像及脸部特征点，<br>
-imageBufOut为结果图像存储的RGB缓存，如果为空，则不输出rgb图像。<br>
-pOutputTexId为结果图像存储的纹理Id，如果为空，则不输出纹理对象。<br>
-以上两个参数至少有一个不能为空。<br>
-faceLandmarks为结果脸部特征点缓存的数组缓存。格式为：第一个人的脸部特征点列表，第二个人脸部特征点列表…<br>
-targetWidth:指定输出rgb图像，或纹理的宽度<br>
-targetHeight：指定输出rgb图像，或纹理的高度<br>
-iImgCropMode：目标图像与相机输入的目标图像尺寸不一致时，指定输入目标图像的裁剪方式，0：拉伸到目标位置，1:中心点对齐并裁剪边界（不缩放），2：居中对齐并缩放以尽可能匹配目标，然后裁剪<br>
-///@pXscale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
-///@pYScale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
-返回值：检测到的人脸个数<br>
+>XJGARSDK_API int XJGARSDKGetTargetResultImgAndLandMarks(unsigned char* imageBufOut, int* pOutputTexId, float* faceLandmarks, int >targetWidth, int targetHeight, int iImgCropMode, float *pXscale = 0, float * pYScale = 0);<br>
+>//在每一帧渲染结束后，可以使用该函数获取结果图像及脸部特征点，<br>
+>imageBufOut为结果图像存储的RGB缓存，如果为空，则不输出rgb图像。<br>
+>pOutputTexId为结果图像存储的纹理Id，如果为空，则不输出纹理对象。<br>
+>以上两个参数至少有一个不能为空。<br>
+>faceLandmarks为结果脸部特征点缓存的数组缓存。格式为：第一个人的脸部特征点列表，第二个人脸部特征点列表…<br>
+>targetWidth:指定输出rgb图像，或纹理的宽度<br>
+>targetHeight：指定输出rgb图像，或纹理的高度<br>
+>iImgCropMode：目标图像与相机输入的目标图像尺寸不一致时，指定输入目标图像的裁剪方式，0：拉伸到目标位置，1:中心点对齐并裁剪边界（不缩放），2：居中对齐并缩放以尽可能匹配目标，然后裁剪<br>
+>///@pXscale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
+>///@pYScale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
+>返回值：检测到的人脸个数<br>
 
 
 一、准备工作
