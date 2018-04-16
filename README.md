@@ -1,15 +1,17 @@
 # XJGARSDKDemoApp-IOS
 一、准备工作
-
-安装虚拟机；
-安装Mac操作系统；
-安装Xcode；
-在Mac OSX上安装配置CMake，版本至少是3.7；
+-------------------------------
+1.安装虚拟机；<br>
+2.安装Mac操作系统；<br>
+3.安装Xcode；<br>
+4.在Mac OSX上安装配置CMake，版本至少是3.7；<br>
 
  
 
-本说明使用的VMWare Station 12，操作系统为macOS High Sierra 版本10.13.3，Xcode版本9.2。如果有MAC电脑可以省去步骤1和2。
+本说明使用的VMWare Station 12，操作系统为macOS High Sierra 版本10.13.3，Xcode版本9.2。如果有MAC电脑可以省去步骤1和2。<br>
+
 二、生成工程文件
+------------------
 
 将名为XJGARSDK-ios-cmake的文件夹导入到虚拟机，放在“桌面”；
 修改根目录下CMakeList.txt文件：
