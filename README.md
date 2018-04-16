@@ -11,26 +11,26 @@ XJGARSDK_API bool XJGARSDKInitialization(const char* licenseText, <br>
 * 	第三个参数为 key对应的公司名<br>
 该参数须申请<br>
 
->>>>####销毁方法：<br>
->>>>XJGARSDKCleanUP();<br>
+>>####销毁方法：<br>
+>>XJGARSDKCleanUP();<br>
 2.	使用人脸整形<br>
 ####大眼：<br>
 XJGARSDK_API bool XJGARSDKSetBigEyeParam(int eyeParam);<br>
 eyeParam参数为0-100，数值越大眼睛越大<br>
 
-####瘦脸：<br>
+>>####瘦脸：<br>
 XJGARSDK_API bool XJGARSDKSetThinChinParam(int chinParam); <br>
 chinParam参数为0-100，数值越大脸部下吧越瘦<br>
 
-####红润：<br>
+>>####红润：<br>
 XJGARSDK_API bool XJGARSDKSetRedFaceParam(int redFaceParam); 
 redFaceParam参数为0-100，数值越大脸部皮肤越红润
 
-####美白：<br>
+>>####美白：<br>
 XJGARSDK_API bool XJGARSDKSetWhiteSkinParam(int whiteSkinParam); 
 whiteSkinParam参数为0-100，数值越大脸部皮肤越白
 
-####磨皮：<br>
+>>####磨皮：<br>
 XJGARSDK_API bool XJGARSDKSetSkinSmoothParam(int skinSmoothParam); <br>
 skinSmoothParam参数为0-100， 数值越大越皮肤越光滑<br>
 
@@ -50,14 +50,14 @@ bShowStickPaper参数 为true时，显示贴纸<br>
 XJGARSDK_API bool XJGARSDKChangeStickpaper(const char*  stickPaperName);<br>
 stickPaperName参数为贴纸名称，目前可选的贴纸见StickerPapers子文件夹，每个文件夹的名称均是贴纸名称<br>
 5.	图片视频流处理<br>
-```//初始化OpenGL 环境<br>
+`//初始化OpenGL 环境<br>
 XJGARSDK_API bool XJGARSDKInitOpenglEnvironment(int width,	int height);<br>
 ///if user dont't have opengl environment, call this to set up a virtual opengl environment<br>
 ///@width:	width of input image<br>
 ///@height: height of input image<br>
 ///@return  true: success, false: fail<br>
 
-```///销毁OpenGL环境<br>
+///销毁OpenGL环境<br>
 XJGARSDK_API bool XJGARSDKDestroyOpenglEnvironment();<br>
 ///释放OpenGL资源<br>
 XJGARSDK_API bool XJGARSDKReleaseAllOpenglResources();<br>
@@ -106,7 +106,7 @@ XJGARSDK_API void XJGARSDKDrawAFullViewTexture(int inputTexId, int startX, int s
 ///@viewportWidth: width of view<br>
 ///@viewportWidth: height of view<br>
 
-XJGARSDK_API int XJGARSDKGetTargetResultImgAndLandMarks(unsigned char* imageBufOut, int* pOutputTexId, float* faceLandmarks, int targetWidth, int targetHeight, int iImgCropMode, float *pXscale = 0, float * pYScale = 0);<br>
+XJGARSDK_API int XJGARSDKGetTargetResultImgAndLandMarks(unsigned char* imageBufOut, int* pOutputTexId, float* faceLandmarks, int targetWidth, int targetHeight, int iImgCropMode, float *pXscale = 0, float * pYScale = 0);`<br>
 //在每一帧渲染结束后，可以使用该函数获取结果图像及脸部特征点，<br>
 imageBufOut为结果图像存储的RGB缓存，如果为空，则不输出rgb图像。<br>
 pOutputTexId为结果图像存储的纹理Id，如果为空，则不输出纹理对象。<br>
@@ -117,7 +117,7 @@ targetHeight：指定输出rgb图像，或纹理的高度<br>
 iImgCropMode：目标图像与相机输入的目标图像尺寸不一致时，指定输入目标图像的裁剪方式，0：拉伸到目标位置，1:中心点对齐并裁剪边界（不缩放），2：居中对齐并缩放以尽可能匹配目标，然后裁剪<br>
 ///@pXscale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
 ///@pYScale, 捕获的结果图像坐标与原始图像坐标的缩放参数<br>
-返回值：检测到的人脸个数```<br>
+返回值：检测到的人脸个数<br>
 
 
 一、准备工作
