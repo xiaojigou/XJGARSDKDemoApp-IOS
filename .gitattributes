@@ -1,0 +1,4 @@
+*.h linguist-language=Objective-C
+*.m linguist-language=Objective-C
+*.mm linguist-language=Objective-C
+*.cmake linguist-language=Objective-C
