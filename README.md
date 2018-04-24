@@ -1,4 +1,5 @@
-# XJGARSDKDemoApp-IOS
+#工程配置
+====================
 一、运行工程准备工作
 -------------------------------
 1.安装虚拟机；<br>
@@ -59,7 +60,11 @@
 ![image](https://github.com/TeacherLuo/XJGARSDKDemoApp-IOS/raw/master/ImageCache/16.jpg)<br>
 在上图的Get Info string的下拉框里，选中Privacy-Photo Library Usage Description，在后面的string字段里输入NSPhotoLibraryUsageDescription，这个字段需要自己手动输入，表示使用相册；选中Privacy-Camera Usage Description，在后面的string字段里输入NSCameraUsageDescription，同样需要自己手动输入，表示使用相机。<br>
 
-API接口
+#免费License申请
+====================
+http://www.xiaojigou.cn 首页-》开发包-》说明文档-》XJGARSDK说明文档
+
+#API接口
 ====================
 注意：SDK中各个函数需要在单一的线程中调用。<br>
 1.	初始化<br>
