@@ -63,7 +63,7 @@ XJGARSDK.rar压缩包内是无camke的工程，直接解压后.xcodeproj文件�
 ![image](https://github.com/TeacherLuo/XJGARSDKDemoApp-IOS/raw/master/ImageCache/16.jpg)<br>
 在上图的Get Info string的下拉框里，选中Privacy-Photo Library Usage Description，在后面的string字段里输入NSPhotoLibraryUsageDescription，这个字段需要自己手动输入，表示使用相册；选中Privacy-Camera Usage Description，在后面的string字段里输入NSCameraUsageDescription，同样需要自己手动输入，表示使用相机。<br>
 
-#免费License申请
+#免费License申请、贴纸制作工具地址
 ====================
 http://www.xiaojigou.cn 首页-》开发包-》说明文档-》XJGARSDK说明文档
 
