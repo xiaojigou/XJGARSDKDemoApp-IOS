@@ -1,5 +1,5 @@
 
-XJGARSDK.rar压缩包内是无camke的工程，直接解压后.xcodeproj文件可以直接运行
+XJGARSDK.zip压缩包内是无camke的工程，直接解压后.xcodeproj文件可以直接运行
 ==========================================================================
 #XJGARSDKDemoApp-IOS是cmake工程，配置方法如下：
 ====================
@@ -76,8 +76,8 @@ http://www.xiaojigou.cn 首页-》开发包-》说明文档-》XJGARSDK说明文
 XJGARSDK_API bool XJGARSDKInitialization(const char* licenseText, <br>
 	const char* userName, const char* companyName);<br>
 * 	第一个参数为key<br>
-* 	第二个参数为 key对应的用户名<br>
-* 	第三个参数为 key对应的公司名<br>
+	 	第二个参数为 key对应的用户名<br>
+	 	第三个参数为 key对应的公司名<br>
 该参数须申请<br>
 
 >####销毁方法：<br>

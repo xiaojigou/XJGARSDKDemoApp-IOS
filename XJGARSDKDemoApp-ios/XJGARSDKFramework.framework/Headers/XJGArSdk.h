@@ -1,8 +1,7 @@
 //
 //  Created by luojianxin on 9/12/17.
-//  Copyright (c) 2017-2018 luojianxin. All rights reserved.
 //  Copyright (c) 2017-2018 xiaojigou network tech. ltd.. All rights reserved.
-//  Copyright (c) 2018 wenyue smart tech. ltd.. All rights reserved.
+//  Copyright (c) 2018 mimigou smart tech. ltd.. All rights reserved.
 //
 #pragma once
 
