@@ -30,7 +30,7 @@
         NSString *sourcePath1 = [bundlePath  stringByAppendingPathComponent:fileName];
         NSString *sourcePath2 = [sourcePath1 stringByAppendingString:@"."];
         NSString *sourcePath  = [sourcePath2 stringByAppendingString:ftype];
-
+        
         NSLog(@"sourcePath：%@", sourcePath);
         NSLog(@"destPath：%@", destPath);
         
@@ -49,7 +49,7 @@
     NSString*destPath1 =[dirName stringByAppendingPathComponent:fileName];
     NSString*destPath2 =[destPath1 stringByAppendingString:@"."];
     NSString*destPath  =[destPath2 stringByAppendingString:ftype];
-
+    
     //  如果目标目录也就是(Documents)目录没有文件的时候，才会复制一份，否则不复制
     if(![fileManager fileExistsAtPath:destPath]){
         // 设置文件路径
@@ -88,9 +88,9 @@
     
     //复制bundle中的人脸检测与对齐模型文件
     [self copyFile2Documents:@"com.xjg.facedet.model" filetype:@"bin"];
-    [self copyFile2Documents:@"com.xjg.landmark.model.100-50-10-5percent.L1000.0-F5-12-4-1.0-2-2-2iter3" filetype:@"bin"];
+    [self copyFile2Documents:@"com.xjg.landmark.model.100-50-10-5percent.L100.0-F5-12-4-1.0-2-2-2iter3" filetype:@"bin"];
     [self copyFile2Documents:@"ResForShader" filetype:@"zip"];
-
+    
     //创建ResForShader目录，复制bundle
     //获得沙盒中Documents文件夹路径
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -103,7 +103,8 @@
     //[self copyFile2DirOfDocument:resDirectory fileName:@"ResForShader" fileType:@"zip"];
     NSString  * shaderResZipDirName   = [documentsPath stringByAppendingPathComponent:@"ResForShader"];
     NSString  * shaderResZipFileName  = [shaderResZipDirName stringByAppendingString:@".zip"];
-    const char* shaderResDName        = [shaderResZipDirName UTF8String];
+    //    const char* shaderResDName        = [shaderResZipDirName UTF8String];
+    const char* shaderResDName        = [documentsPath UTF8String];
     const char* shaderResFName        = [shaderResZipFileName UTF8String];
     XJGARSDKUnzipFileToTheFolder(shaderResFName,shaderResDName);
     
@@ -121,51 +122,52 @@
     //解压缩贴纸资源
     NSString  * stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"angel"];
     NSString  * stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    const char* stickerpaperDName    = [stickerpaperDirName UTF8String];
+    //    const char* stickerpaperDName    = [stickerpaperDirName UTF8String];
+    const char* stickerpaperDName    = [stickerDir UTF8String];
     const char* stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"caishen"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"cangou"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
-//    stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"daxiongmao"];
-//    stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-//    stickerpaperDName    = [stickerpaperDirName UTF8String];
-//    stickerpaperPName    = [stickerpaperPathName UTF8String];
-//    XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
+    //    stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"daxiongmao"];
+    //    stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
+    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    //    stickerpaperPName    = [stickerpaperPathName UTF8String];
+    //    XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"diving"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"stpaper900224"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
-
-
     
-
+    
+    
+    
     std::string licenseText = "hMPthC0oBIbtMp515TWb9jZvrLAKWIMvA4Dhf03n51QvnJr7jZowVe86d0WwU0NK9QGRFaXQn628fRu941qyr3FtsI5R7Y6v1XEpL6YvQNWQCkFEt1SAb0hyawimOYf1tfG2lIaNE63c5e+OxXssOVUWvw8tOr2glVwWVzh79NmZMahrnS8l69SoeoXLMKCYlvAt/qJFFk4+6Aq3QvOv3o72fq5p90yty+YWg7o0HirZpMSP9P5/DHYPFqR/ud7twTJ+Yo2+ZzYvodqRQbGG0HseZn8Xpt7fZdFuZbc2HGRMVk56vNDMRlcGZZXAjENk7m2UMhi1ohhuSf4WmIgXCZFiJXvYFByaY625gXKtEI7+b7t81nWQYHP9BEbzURwL";
     const char* rootDir = [documentsPath UTF8String];
     XJGARSDKSetRootDirectory(rootDir);//first set model data root directory. then initialize the sdk
     XJGARSDKInitialization(licenseText.c_str(), "DoctorLuoInvitedUser:teacherluo", "LuoInvitedCompany:www.xiaojigou.cn");
     
-//    Foo testFramework;
-//    testFramework.PrintFoo();
+    //    Foo testFramework;
+    //    testFramework.PrintFoo();
     
     
     return YES;

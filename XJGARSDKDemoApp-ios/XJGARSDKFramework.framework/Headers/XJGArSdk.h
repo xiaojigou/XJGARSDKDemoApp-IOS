@@ -63,7 +63,6 @@ XJGARSDK_API bool XJGARSDKCleanUP();
 
 
 
-
 ///input 3 channels RGB image , render to get result
 ///@width:	width of input image
 ///@height: height of input image
@@ -85,6 +84,13 @@ XJGARSDK_API int XJGARSDKRenderImage(const unsigned char* image, int width,
 	int height, int* pOutputTexId);
 
 
+//load a rgb buffer to a textrue 
+///@image:	rgb pixels array of a image
+///@width:	width of input image
+///@height: height of input image
+///@outputTexId:	result opengl texture name
+XJGARSDK_API int XJGARSDKLoadImageToTexture(unsigned char *image, int width, int height, int* outputTexID);
+
 
 ///input opengl texture , render to get result opengl texture 
 ///@inputTexId:input opengl texture
@@ -98,8 +104,10 @@ XJGARSDK_API int XJGARSDKRenderGLTexture(int inputTexId, int width,
 ///@width:	width of input texture
 ///@height: height of input texture
 XJGARSDK_API int XJGARSDKRenderGLTexture(int inputTexId, int width, int height);
-
-
+///set the flips of input opengl textures
+///@bFlipY: 0:default, no flip, 1 or other: flip y axis(upside down)
+///@bFlipX: 0:default, no flip, 1 or other: flip x axis(turn left to right)
+XJGARSDK_API void XJGARSDKSetInputTextrueFlips(int bFlipY/* = 0*/, int bFlipX/* = 0*/);
 
 // to be done...
 //XJGARSDK_API bool XJGARSDKSetShowLandMarks(bool bShowLandMarks);
