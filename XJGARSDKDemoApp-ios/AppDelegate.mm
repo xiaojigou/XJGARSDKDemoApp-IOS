@@ -87,8 +87,8 @@
     
     
     //复制bundle中的人脸检测与对齐模型文件
-    [self copyFile2Documents:@"com.xjg.facedet.model" filetype:@"bin"];
-    [self copyFile2Documents:@"com.xjg.landmark.model.100-50-10-5percent.L100.0-F5-12-4-1.0-2-2-2iter3" filetype:@"bin"];
+    [self copyFile2Documents:@"com.xjg.facedet.model.dnn" filetype:@"bin"];
+    [self copyFile2Documents:@"com.xjg.landmark.model.68-81-97" filetype:@"bin"];
     [self copyFile2Documents:@"ResForShader" filetype:@"zip"];
     
     //创建ResForShader目录，复制bundle
@@ -122,21 +122,21 @@
     //解压缩贴纸资源
     NSString  * stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"angel"];
     NSString  * stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    //    const char* stickerpaperDName    = [stickerpaperDirName UTF8String];
-    const char* stickerpaperDName    = [stickerDir UTF8String];
+    const char* stickerpaperDName    = [stickerpaperDirName UTF8String];
+    //    const char* stickerpaperDName    = [stickerDir UTF8String];
     const char* stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"caishen"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"cangou"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
@@ -148,13 +148,13 @@
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"diving"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     
     stickerpaperDirName  = [stickerDir stringByAppendingPathComponent:@"stpaper900224"];
     stickerpaperPathName = [stickerpaperDirName stringByAppendingString:@".zip"];
-    //    stickerpaperDName    = [stickerpaperDirName UTF8String];
+    stickerpaperDName    = [stickerpaperDirName UTF8String];
     stickerpaperPName    = [stickerpaperPathName UTF8String];
     XJGARSDKUnzipFileToTheFolder(stickerpaperPName,stickerpaperDName);
     

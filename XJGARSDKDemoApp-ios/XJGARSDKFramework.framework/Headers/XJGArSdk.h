@@ -141,6 +141,10 @@ XJGARSDK_API bool XJGARSDKSetOptimizationMode(int mode);
 //XJGARSDK_API int XJGARSDKGetFaceRectAndLandmarks(float faceRects[], 
 //	float faceLandmarks[]);
 XJGARSDK_API int XJGARSDKGetFaceLandmarks(float* faceLandmarks);
+//get  landmarks.
+//currently, we support landmark num 68 pts and 81 pts, 
+//we may support 98,106,200,1000,and 2000pts landmarks later.
+XJGARSDK_API int XJGARSDKGetFaceLandmarks(int landmarkNum, float* faceLandmarks);
 
 
 ///after render, you may want small or large reults, 

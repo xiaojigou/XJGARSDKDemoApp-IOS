@@ -129,9 +129,9 @@
     [self.view addSubview:textHint];
     
 
-    //XJGARSDKSetOptimizationMode(0);//optimizing for video
+    XJGARSDKSetOptimizationMode(0);//optimizing for video
     
-    XJGARSDKSetOptimizationMode(2);//optimizing for video using asychronized face detection thread,异步线程实现人脸对齐检测的视频模式
+    //XJGARSDKSetOptimizationMode(2);//optimizing for video using asychronized face detection thread,异步线程实现人脸对齐检测的视频模式
     //XJGARSDKSetOptimizationMode(0);//optimizing for video, default, 视频模式,默认
     //XJGARSDKSetOptimizationMode(1);//optimizing for image, 图片模式
     
